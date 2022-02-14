@@ -42,10 +42,10 @@
 
 import emojipedia from "./emojipedia";
 
-let result = emojipedia.map((entry) => {
-  return entry.meaning;
+emojipedia.map((entry) => {
+  console.log(entry.meaning.substring(0, 100));
 });
 
-result.map((x) => {
-  console.log(x.substring(0, 100));
-});
+// result.map((x) => {
+//   console.log(x.substring(0, 100));
+// });
